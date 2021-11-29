@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+
+.headerWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid grey;
+  padding: 0.5em 3em 0.5em;
+  background-color: white;
+}
+
+.navigation ul {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  border: 1px solid black;
+  border-bottom: 0px;
+}
+
+.navigation ul li a, .headerWrapper a {
+  color: black;
+  text-decoration: none
+}
+
+.navigation ul li {
+  padding: 10px;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+.navigationLogin {
+  border: 1px solid black;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.servicesWrapper, .aboutWrapper, .contactWrapper, .addEmployeeWrapper, .addCustomerWrapper, .employeesWrapper, .customersWrapper, .teamsWrapper, .addTeamWrapper, .projectsWrapper, .addProjectWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5%;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 10%;
+}
+
+.servicesWrapper .header, .contactWrapper .header, .addEmployeeWrapper .header, .addCustomerWrapper .header, .addProjectWrapper .header, .addTeamWrapper .header, .projectsWrapper .header {
+  font-size: 50px;
+}
+
+
+
+.servicesWrapper .grid {
+  margin-top: 3%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 3em;
+  width: 100%;
+}
+
+.servicesWrapper .grid .photo {
+  text-align: center;
+  font-size: 50px;
+}
+
+.servicesWrapper .grid .avatar {
+  text-align: center;
+  font-size: 250px;
+  height: 320px;
+}
+
+.servicesWrapper .grid .role {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.servicesWrapper .grid .socialNetwork {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.servicesWrapper .grid .socialNetwork .socIcon {
+  margin-top: 10px;
+  font-size: 35px;
+  color: rgb(10, 46, 112);
+}
+
+.servicesWrapper .grid .title {
+  text-align: center;
+  font-size: 25px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.servicesWrapper .grid .text {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.servicesWrapper .grid .singleItem {
+  padding: 3em;
+}
+
+.aboutWrapper {
+  margin-top: 15px;
+}
+
+.aboutWrapper .image {
+  width: 100%;
+  text-align: center;
+  max-width: 1000px;
+}
+
+.aboutWrapper .image img {
+  height: 500px;
+  width: 100%;
+}
+
+.aboutWrapper .text {
+  margin-top: 10px;
+  letter-spacing: 1.1px;
+}
+
+.contactWrapper .grid {
+  display: grid;
+  margin-top: 30px;
+  grid-gap: 50px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.contactWrapper .grid .leftSide {
+  display: grid;
+}
+
+.contactWrapper .grid .leftSide input:first-child {
+  margin-top: 0;
+}
+
+.contactWrapper .grid .leftSide input {
+  padding: 30px;
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.contactWrapper .grid .rightSide textarea {
+  height: 100%;
+  width: 100%;
+  resize: none;
+  font-size: 20px;
+  min-height: 400px;
+}
+
+.contactWrapper .submit {
+  padding: 20px;
+  text-align: center;
+}
+
+.contactWrapper .submit .button {
+  text-transform: uppercase;
+  border: 1px solid black;
+  padding: 10px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.registrationWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signInCard {
+  position: relative;
+  padding: 2em;
+  width: 350px;
+  height: 360px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 5px 35px rgb(0, 0, 0, 0.2);
+  margin: 10px;
+}
+
+.signInCard .form {
+  position: relative;
+  width: 100%;
+}
+
+.signInCard .form h2 {
+  color: #3873d1;
+  font-weight: 700;
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  border-left: 10px solid #3873d1;
+  padding-left: 20px;
+}
+
+.signInCard .form.afterFirst .inputBox {
+  position: relative;
+  margin: 8px 20px;
+}
+
+.signInCard .form .inputBox {
+  position: relative;
+  margin: 20px;
+}
+
+.signUpCart {
+  height: 450px;
+}
+
+.signInCard .form .inputBox input {
+  width: -webkit-fill-available;
+  outline: none;
+  border: 1px solid black;
+  padding: 8px 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 35px;
+  padding-right: 35px;
+}
+
+.signInCard .form.afterFirst .inputBox input.success,
+.innerDiv.afterFirst .inputBox input.success,
+.addEmployeeWrapper form .grid.afterFirst .inputBox input.success,
+.addCustomerWrapper form .grid.afterFirst .inputBox input.success,
+.addProjectWrapper form .grid.afterFirst .inputBox input.success,
+.addTeamWrapper form .grid.afterFirst .inputBox input.success {
+  border: 2px solid #2ecc71;
+}
+
+.signInCard .form.afterFirst .inputBox input.error,
+.innerDiv.afterFirst .inputBox input.error,
+.addEmployeeWrapper form .grid .inputBox input.error,
+.addCustomerWrapper form .grid .inputBox input.error,
+.addProjectWrapper form .grid .inputBox input.error,
+.addTeamWrapper form .grid .inputBox input.error {
+  border: 2px solid #f43648;
+}
+
+.signInCard .form .inputBox .icon {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  font-size: 25px;
+  color: #3873d1;
+}
+
+.signInCard .form .inputBox .icon.password {
+  color: #f43648;
+}
+
+.signInCard .form .inputBox.datalist input {
+  padding-left: 10px;
+}
+
+.signInCard .form .inputBox input[type="submit"] {
+  max-width: 100px;
+  background-color: #2ecc71;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1.8px;
+}
+
+.signInCard .form a {
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.addEmployeeWrapper .grid, .addCustomerWrapper .grid, .addProjectWrapper .grid, .addTeamWrapper .grid {
+  margin-top: 2em;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 50px;
+  width: 90%;
+}
+
+.addTeamWrapper .grid {
+  grid-template-columns: 1fr 1fr;
+  width: initial;
+}
+
+.addEmployeeWrapper .grid .rightSide,
+.addProjectWrapper .grid .rightSide,
+.addCustomerWrapper .grid .rightSide {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  align-items: start;
+}
+
+.inputBox {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.inputBox input {
+  padding: 10px;
+}
+
+.addEmployeeWrapper .leftSide .img img, .addCustomerWrapper .leftSide .img img {
+  width: 100%;
+  max-height: 400px;
+}
+
+.inputBox input[type="submit"], .inputBox .cancel, .inputBox .updateButton {
+  max-width: 100px;
+  background-color: #2ecc71;
+  padding: 8px 10px;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 1.8px;
+}
+
+.inputBox .cancel {
+  background: rgb(255, 4, 4);
+}
+
+.inputBox .updateButton {
+  background: rgb(21, 57, 155);
+}
+
+.dropDownManu {
+  display: block !important;
+  height: 20px;
+  overflow: hidden;
+  line-height: 1.5;
+}
+
+.dropDownManu.show {
+  overflow: visible;
+  line-height: 1.5
+}
+
+.dropDownManu a:first-child {
+  padding-top: 0px !important;
+  border-right: none;
+  border-left: none;
+}
+
+.dropDownManu li {
+  padding: 11px !important;
+  border-bottom: 1px solid black;
+  border-right: none !important;
+  background-color: white;
+}
+
+
+.navigation ul li:last-child {
+  border-right: none;
+}
+
+.dropDownManu li {
+  padding-top: 0px !important;
+}
+
+.dropDownManu a li {
+  padding-top: 10px !important;
+}
+
+.table {
+  width: 100%;
+  height: 650px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.table table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.table table thead {
+  position: sticky;
+  top: 0;
+}
+
+.table table thead td {
+  text-align: center;
+  font-weight: 700;
+  border-right: 1px solid black;
+}
+
+.table table tbody td {
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  word-break: break-all;
+}
+
+.table table tbody td:last-child, .infoTable table tbody td:last-child {
+  border-right: none
+}
+
+.table table thead td:last-child {
+  border-right: none;
+}
+
+.table table tbody tr {
+  height: 60px;
+}
+
+.table table thead tr {
+  border-bottom: 1px solid black;
+  height: 50px;
+  background-color: lightgray;
+}
+
+.employeesWrapper .header, .customersWrapper .header, .teamsWrapper .header, .projectsWrapper .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.employeesWrapper .header .title, .customersWrapper .header .title, .teamsWrapper .header .title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.employeesWrapper .header .iconAdd, .customersWrapper .header .iconAdd, .teamsWrapper .header .iconAdd {
+  font-size: 45px;
+  line-height: 0;
+  cursor: pointer;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-container {
+  height: 200px;
+  overflow: inherit;
+  overflow-x: clip;
+}
+
+.allTeams {
+  width: 100%;
+}
+
+.swiper-slide-active {
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.swiper-slide {
+  transition: box-shadow 0.3s ease-in-out
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction {
+  bottom: -50px;
+}
+
+.addTeamWrapper .grid .leftSide .inputBox textarea {
+  resize: none;
+  height: 350px;
+}
+
+.infoTable {
+  width: 500px;
+  height: 700px;
+  border: 1px solid black;
+  overflow: auto;
+}
+
+.infoTable {
+  height: 500px;
+  overflow: auto;
+}
+
+.infoTable table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.infoTable table thead {
+  position: sticky;
+  top: 0;
+}
+
+.infoTable table thead td {
+  text-align: center;
+  font-weight: 700;
+  border-right: 1px solid black;
+}
+
+.infoTable table tbody td {
+  text-align: center;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.infoTable table tbody td:last-child {
+  border-right: none
+}
+
+.infoTable table thead td:last-child {
+  border-right: none;
+}
+
+.infoTable table thead tr {
+  border-bottom: 1px solid black;
+  height: 30px;
+  background-color: lightgray;
+}
+
+
+.teamDescription {
+  width: 100%;
+  border: 1px solid black;
+  margin-top: 6em;
+  padding: 10px;
+  height: 200px;
+  overflow: auto;
+}
+
+.teamMembers {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.teamMembers .swiper-slide {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  position: relative;
+}
+
+.teamMembers .swiper-button-prev {
+  left: 0px;
+}
+
+.teamMembers .swiper-button-next {
+  right: 0px;
+}
+
+.swiper-slide {
+  cursor: pointer;
+}
+
+.topRightCirlce {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid black;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+}
+
+.memberImg {
+  height: 120px;
+  width: 120px;
+}
+
+.memberImg img {
+  height: 100%;
+  width: 100%;
+}
+
+
+.swiper-slide-active .iconsTeams {
+  visibility: visible;
+}
+
+.iconsTeams {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  right: 13px;
+  font-size: 45px;
+}
+
+#edit:hover {
+  color: rgb(50, 50, 172);
+}
+
+#delete:hover {
+  color: rgb(145, 22, 22);
+}
+
+
+.addTeamMemberWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(50, 50, 50, 0.5));
+  z-index: 100 !important;
+}
+
+.innerDiv {
+  background-color: white;
+  padding: 1em 3em 3em;
+  border-radius: 5px;
+}
+
+.addProjectWrapper .leftSide .inputBox textarea {
+  min-width: 300px;
+  height: 150px;
+  resize: none;
+}
+
+@media (max-width: 1171px) {
+  .addEmployeeWrapper .grid, .addCustomerWrapper .grid,.addProjectWrapper .grid {
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+
+  .infoTable {
+    width: 100%;
+  }
+}
+
+.addEmployeeWrapper form,.addCustomerWrapper form,.addProjectWrapper form {
+  width: 100%;
+}
+
+.addTeamWrapper form{
+  width: 100%;
+}
