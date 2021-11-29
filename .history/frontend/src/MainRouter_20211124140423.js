@@ -35,7 +35,7 @@ const MainRouter = () => {
         return children;
     }
 
-    function RequireAuthAndAuthorization({ children }) {
+    async function RequireAuthAndAuthorization({ children }) {
         let isGood;
         const { id } = useParams();
         let location = useLocation();

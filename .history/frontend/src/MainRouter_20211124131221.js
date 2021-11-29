@@ -50,7 +50,7 @@ const MainRouter = () => {
             }).catch((error) => {
                 return <Navigate to='/signin' />
             })
-            console.log("AA2")
+            console.log("AA")
         return <Navigate to='/about' />
     }
 

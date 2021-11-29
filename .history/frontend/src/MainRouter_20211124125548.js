@@ -44,13 +44,11 @@ const MainRouter = () => {
                 console.log(res)
                 isGood = res;
                 if (isGood) {
-                    console.log("AA")
                     return children;
                 }
             }).catch((error) => {
                 return <Navigate to='/signin' />
             })
-            console.log("AA2")
         return <Navigate to='/about' />
     }
 

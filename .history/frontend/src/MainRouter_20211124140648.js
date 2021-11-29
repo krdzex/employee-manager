@@ -35,22 +35,12 @@ const MainRouter = () => {
         return children;
     }
 
-    function RequireAuthAndAuthorization({ children }) {
+    async function RequireAuthAndAuthorization({ children }) {
         let isGood;
         const { id } = useParams();
         let location = useLocation();
-        authHelper.isAuthorized(id)
-            .then(res => {
-                console.log(res)
-                isGood = res;
-                if (isGood) {
-                    console.log("AA")
-                    return children;
-                }
-            }).catch((error) => {
-                return <Navigate to='/signin' />
-            })
-            console.log("AA2")
+        let result = await authHelper.isAuthorized(id)
+            
         return <Navigate to='/about' />
     }
 
