@@ -10,7 +10,6 @@ const Projects = () => {
     useEffect(() => {
         (async function () {
             const projects = await listProjects();
-            console.log(projects)
             for (let i = 0; i < projects.length; i++) {
                 let projectInfo = await customerInfo(projects[i].client)
                 let teamInformation = await teamInfo(projects[i].team);

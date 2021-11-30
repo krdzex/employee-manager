@@ -59,7 +59,7 @@ const AddCustomer = () => {
         setValues({ ...values, img: e.target.files[0] })
     }
 
-    if (values.redirect) return <Navigate to="/customers" />
+    if (values.redirect) return <Navigate to="/" />
     return (
         <div className="addCustomerWrapper">
             <div className="header">
