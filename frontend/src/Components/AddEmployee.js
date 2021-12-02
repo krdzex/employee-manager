@@ -168,8 +168,7 @@ const AddEmployee = () => {
                             </div>
                             <div className="inputBox">
                                 Employment End Date:
-                                <input type="date" className={errors.employmentEndDate ? "error" : "success"} value={values.employmentEndDate} onChange={onChange("employmentEndDate")} />
-                                {errors.employmentEndDate && (<span style={{ color: "red" }}>{errors.employmentEndDate}</span>)}
+                                <input type="date" value={values.employmentEndDate} onChange={onChange("employmentEndDate")} />
                             </div>
                             <div className="inputBox">
                                 Role:

@@ -3,7 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import { userInfo } from '../ApiService/userApi';
 import moment from "moment"
 import { listEmployeeTeamRole } from '../ApiService/teamApi';
-import authHelper from '../Auth/authHelper';
 
 const SingleEmployee = () => {
     const { id } = useParams();

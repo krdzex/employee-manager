@@ -52,6 +52,7 @@ const Teams = () => {
                             return member.role
                     }
                 });
+                console.log("A")
                 setTeamMembers(res)
             }).catch(err => console.log(err))
         } else {
@@ -100,7 +101,7 @@ const Teams = () => {
                 }} navigation={true} onSwiper={(e) => setActiveSlide(e.realIndex)} onSlideChange={(e) => setActiveSlide(e.realIndex)} className="mySwiper">
                     {allTeams.map((team, id) => {
                         return <SwiperSlide key={id} >
-                            <div onClick={() => onClick(team._id)} style={{ width: "100%", height: "100%", display: 'flex', alignItems: "center", justifyContent: "center" }}>{team.teamName}</div>
+                            <div onClick={() => onClick(team._id)} className="teamCard">{team.teamName}</div>
                             {authHelper.isAuthentcated().user.role === "Admin" && (<div className="iconsTeams">
                                 <Link to={`/editTeam/${team._id}`} style={{ color: "black" }}>
                                     <Icon icon="entypo:edit" id="edit" />

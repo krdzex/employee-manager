@@ -62,7 +62,7 @@ const AddTeamMember = ({ id, teamName }) => {
             <div className="innerDiv" id="innerDiv">
                 <form onSubmit={onSubmit}>
                     <div className="title">
-                        <h2>Adding team member to team: <span style={{ textDecoration: "underline", fontWeight: "500" }}>{teamName}</span></h2>
+                        <h2>Adding team member to team: <span style={{ textDecoration: "underline", fontWeight: "500",wordBreak:"break-all" }}>{teamName}</span></h2>
                     </div>
                     <div>
                         <div className="inputBox">

@@ -165,7 +165,7 @@ const EditEmployee = () => {
                             </div>
                             <div className="inputBox" style={{ flexDirection: "row", justifyContent: "space-between", alignItems: "center" }}>
                                 <input type="submit" value="Update"/>
-                                <Link to="/emyploees" style={{ textDecoration: "none" }}><div className="cancel">
+                                <Link to="/employees" style={{ textDecoration: "none" }}><div className="cancel">
                                     Cancel
                                 </div></Link>
                             </div>

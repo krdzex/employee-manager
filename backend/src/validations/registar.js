@@ -15,7 +15,6 @@ module.exports = function validateRegistar(data) {
     data.employmentStartDate = !isEmpty(data.employmentStartDate) ? data.employmentStartDate : ""
     data.status = !isEmpty(data.status) ? data.status : ""
     data.jobTitle = !isEmpty(data.jobTitle) ? data.jobTitle : ""
-    data.employmentEndDate = !isEmpty(data.employmentEndDate) ? data.employmentEndDate : ""
     data.email = !isEmpty(data.email) ? data.email : ""
     data.password = !isEmpty(data.password) ? data.password : ""
 
@@ -55,9 +54,6 @@ module.exports = function validateRegistar(data) {
     }
     if (Validator.isEmpty(data.jobTitle)) {
         errors.jobTitle = "Job title is required";
-    }
-    if (Validator.isEmpty(data.employmentEndDate)) {
-        errors.employmentEndDate = "End date is required";
     }
     if (Validator.isEmpty(data.email)) {
         errors.email = "Email is required";

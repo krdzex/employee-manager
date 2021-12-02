@@ -18,7 +18,7 @@ const Header = () => {
                     <ul >
                         {authHelper.isAuthentcated() || logged ? <li>
                             <ul className={show ? "dropDownManu show" : "dropDownManu"} onClick={() => setShow(!show)}>
-                                <li style={{ cursor: "pointer", paddingLeft: "0px", paddingRight: "0px" }}>
+                                <li style={{ cursor: "pointer", paddingLeft: "0px", paddingRight: "0px"}}>
                                     Database
                                 </li>
                                 <Link to="/employees">

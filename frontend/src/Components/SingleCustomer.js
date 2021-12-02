@@ -3,7 +3,6 @@ import { Link, useParams } from 'react-router-dom';
 import { customerInfo } from '../ApiService/customerApi';
 import { listCustomerProjects } from '../ApiService/projectApi';
 import { teamInfo } from '../ApiService/teamApi';
-import authHelper from '../Auth/authHelper';
 
 
 const SingleCustomer = () => {
