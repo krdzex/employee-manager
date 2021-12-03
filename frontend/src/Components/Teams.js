@@ -52,7 +52,6 @@ const Teams = () => {
                             return member.role
                     }
                 });
-                console.log("A")
                 setTeamMembers(res)
             }).catch(err => console.log(err))
         } else {
